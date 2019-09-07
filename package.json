@@ -1,66 +1,63 @@
 {
-  "name": "reactappdemo",
-  "version": "0.1.0",
-  "main": "app.js",
-  "private": true,
-  "homepage": ".",
-  "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.4",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
-    "antd": "^3.23.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "typescript": "3.6.2"
-  },
-  "devDependencies": {
-    "electron": "^6.0.7",
-    "electron-builder": "^21.2.0",
-    "eslint-config-prettier": "^6.2.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "react-scripts start ; node node_modules/electron/cli.js .",
-    "electron": "node node_modules/electron/cli.js .",
-    "package": "react-scripts build && cp ./app.js ./build/electron.js && electron-builder -mwl"
-  },
-  "build": {
-    "appId": "com.zmide.jxd",
-    "copyright": "PBK-B",
-    "productName": "九仙道",
-    "dmg": {
-      "background": "#666",
-      "window": {
-        "x": 100,
-        "y": 100,
-        "width": 500,
-        "height": 300
-      }
+    "name": "reactappdemo",
+    "version": "0.1.0",
+    "main": "app.js",
+    "private": true,
+    "homepage": ".",
+    "dependencies": {
+        "@types/jest": "24.0.18",
+        "@types/node": "12.7.4",
+        "@types/react": "16.9.2",
+        "@types/react-dom": "16.9.0",
+        "antd": "^3.23.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "react-scripts": "3.1.1",
+        "typescript": "3.6.2"
     },
-    "win": {
-      "icon": "build/favicon.ico"
+    "devDependencies": {
+        "electron": "^6.0.7",
+        "electron-builder": "^21.2.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "dev": "react-scripts start ; node node_modules/electron/cli.js .",
+        "electron": "node node_modules/electron/cli.js .",
+        "package": "react-scripts build && cp ./app.js ./build/electron.js && electron-builder -mwl"
+    },
+    "build": {
+        "appId": "com.zmide.jxd",
+        "copyright": "PBK-B",
+        "productName": "九仙道",
+        "dmg": {
+            "background": "#666",
+            "window": {
+                "x": 100,
+                "y": 100,
+                "width": 500,
+                "height": 300
+            }
+        },
+        "win": {
+            "icon": "build/favicon.ico"
+        }
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     }
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
 }
