@@ -24,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+	"eject": "react-scripts eject",
+	"dev": "react-scripts start ; node node_modules/electron/cli.js .",
     "electron": "node node_modules/electron/cli.js .",
     "package": "react-scripts build && cp ./app.js ./build/electron.js && electron-builder -mwl"
   },
