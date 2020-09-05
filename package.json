@@ -16,7 +16,7 @@
         "typescript": "3.6.2"
     },
     "devDependencies": {
-        "electron": "^6.0.7",
+        "electron": "^7.2.4",
         "electron-builder": "^21.2.0"
     },
     "scripts": {
